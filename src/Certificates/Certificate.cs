@@ -2,6 +2,7 @@
 using System.Runtime.Serialization;
 using System.Security.Cryptography;
 using System.Security.Cryptography.X509Certificates;
+using System.Text;
 
 namespace Certificates
 {
@@ -221,6 +222,55 @@ namespace Certificates
         public virtual RSA GetPublicKeyRSA() => this.GetRSAPublicKey();
 
         #endregion Properties
+
+        #region Public methods
+
+        public string ExtractTIN()
+        {
+            foreach (X509Extension ext in Extensions)
+            {
+                if (ext.Oid.Value.StartsWith("1.3.6.1.4.1.49952.") && ext.Oid.Value.Split('.')[9] == "6")
+                {
+                    return Encoding.Default.GetString(ext.RawData);
+                }
+            }
+            return string.Empty;
+        }
+
+        public string ExtractTaxCoreApiUrl()
+        {
+            foreach (X509Extension ext in Extensions)
+            {
+                if (ext.Oid.Value.StartsWith("1.3.6.1.4.1.49952.") && ext.Oid.Value.Split('.')[9] == "5")
+                {
+                    return Encoding.Default.GetString(ext.RawData);
+                }
+            }
+            return string.Empty;
+        }
+
+        public void Dispose()
+        {
+            this.Reset();
+        }
+
+        public virtual void GetObjectData(SerializationInfo info, StreamingContext context)
+        {
+            try
+            {
+                info.AddValue(nameof(RawData), RawData);
+            }
+            catch (Exception)
+            {
+                info.AddValue(nameof(RawData), null);
+            }
+            info.AddValue(nameof(CertificateId), CertificateId);
+            info.AddValue(nameof(RevokeReasonDescription), RevokeReasonDescription);
+            info.AddValue(nameof(DateRevoked), DateRevoked);
+            info.AddValue(nameof(CertificateRevokeReason), CertificateRevokeReason);
+        }
+
+        #endregion Public methods
 
         #region Private methods
 
