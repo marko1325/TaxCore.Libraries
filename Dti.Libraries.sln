@@ -13,7 +13,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Certificates", "Certificate
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Certificates", "Certificates", "{F6246450-511F-4EA4-9E96-7378B0983EA9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Certificates.Test", "test\Certificates\Certificates.Test\Certificates.Test.csproj", "{CCEA350A-850C-44AF-9EDD-A9092EFECCE4}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Certificates.Test", "test\Certificates\Certificates.Test.csproj", "{CCEA350A-850C-44AF-9EDD-A9092EFECCE4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
