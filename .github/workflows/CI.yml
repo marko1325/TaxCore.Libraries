@@ -67,19 +67,6 @@ jobs:
     - name: Publish win-x64
       run: dotnet publish src/Certificates/Certificates.csproj -c Release -r win-x64 -p:PublishSingleFile=false -p:AssemblyVersion=${{ steps.gitversion.outputs.SemVer }}
       
-    - uses: actions/create-release@v1
-      id: create_release
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      with:
-          tag_name: ${{ github.ref }}
-          release_name: ${{ github.ref }}
-
-    - uses: csexton/release-asset-action@v2
-      with:
-          github-token: ${{ secrets.GITHUB_TOKEN }}
-          pattern: src/Certificates/bin/Release/net6.0/win-x64/publish/*
-          release-url: ${{ steps.create_release.outputs.upload_url }}
     
     #- name: Publish win-x86
     #  run: dotnet publish src/Certificates/Certificates.csproj -c Release -r win-x86 -p:PublishSingleFile=true -p:AssemblyVersion=${{ steps.gitversion.outputs.SemVer }}
