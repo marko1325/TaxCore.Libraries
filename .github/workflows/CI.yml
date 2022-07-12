@@ -78,7 +78,7 @@ jobs:
     - uses: csexton/release-asset-action@v2
       with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
-          pattern: src/SecureElementReader.App/bin/Release/net6.0/win-x64/publish/*
+          pattern: src/Certificates/bin/Release/net6.0/win-x64/publish/*
           release-url: ${{ steps.create_release.outputs.upload_url }}
     
     #- name: Publish win-x86
