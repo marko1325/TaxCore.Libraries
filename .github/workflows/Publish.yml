@@ -71,6 +71,6 @@ jobs:
          PROJECT_FILE_PATH: src/Certificates/Certificates.csproj
          PACKAGE_NAME: Dti.Libraies.Certificates
          VERSION_FILE_PATH: src/Certificates/Certificates.csproj
-         VERSION_REGEX: \s*<Version>(.*)<\/Version>\s*
+         VERSION_REGEX: ^\s*<Version>(.*)<\/Version>$
          NUGET_KEY: ${{ secrets.NUGET_KEY }}
           
