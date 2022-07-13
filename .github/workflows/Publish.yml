@@ -38,7 +38,7 @@ jobs:
         run: dotnet build ${{ env.PROJECT_PATH }} -c Release --no-restore
 
       - name: Publish project 
-        run: dotnet publish ${{ env.PROJECT_PATH }} -c Release -r win-x64 -p:PublishSingleFile=true -p:AssemblyVersion=${{ steps.gitversion.outputs.semVer }}
+        run: dotnet publish ${{ env.PROJECT_PATH }} -c Release -r win-x64 -p:PublishSingleFile=false -p:AssemblyVersion=${{ steps.gitversion.outputs.semVer }}
         
       - name: Create Tag     
         uses: Yanjingzhu/FirstJSAction@v1.3
