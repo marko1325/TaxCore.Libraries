@@ -1,6 +1,8 @@
 name: "Deploy to Nuget"
 
-on: ["push"]
+on:
+  push:
+    branches: [ "main" ]
 
 env:
   PROJECT_PATH: 'Certificate/Certificate.csproj'
