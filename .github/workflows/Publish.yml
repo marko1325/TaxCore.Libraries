@@ -63,3 +63,12 @@ jobs:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           pattern: ${{ steps.gitversion.outputs.semVer }}.zip
           release-url: ${{ steps.create_release.outputs.upload_url }}
+          
+      - name: publish on version change
+        id: publish_nuget
+        uses: brandedoutcast/publish-nuget@v2
+        with:
+         PROJECT_FILE_PATH: Certificates/Certificates.csproj
+         BUILD_CONFIGURATION: Release
+         PACKAGE_NAME: Certificates
+          
