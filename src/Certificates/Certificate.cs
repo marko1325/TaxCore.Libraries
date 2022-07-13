@@ -385,7 +385,7 @@ namespace Certificates
                 Email = email,
                 GivenName = givenName,
                 StreetAddress = streetAddress,
-                SurName = surName
+                SurName = surName  
             };
         }
 
