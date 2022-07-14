@@ -4,14 +4,10 @@
     <TargetFramework>net6.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <AssemblyName>Dti.Libraries.$(MSBuildProjectName)</AssemblyName>
-    <RootNamespace>Dti.Libraries.$(MSBuildProjectName.Replace(" ", "_"))</RootNamespace>
-	  <PackageId>Dti.Libraries.$(MSBuildProjectName)</PackageId>
+    <AssemblyName>Datati.Libraries.$(MSBuildProjectName)</AssemblyName>
+    <RootNamespace>Datati.Libraries.$(MSBuildProjectName.Replace(" ", "_"))</RootNamespace>
+	  <PackageId>Datati.Libraries.$(MSBuildProjectName)</PackageId>
 	  <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
-	  <AssemblyVersion>1.0.4</AssemblyVersion>
-	  <FileVersion>1.0.4</FileVersion>
-	  <VersionPrefix>1.0.4</VersionPrefix>
-	  <Version>1.0.4</Version>
   </PropertyGroup>
 
 </Project>
