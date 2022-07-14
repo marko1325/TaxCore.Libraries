@@ -19,6 +19,18 @@ jobs:
         with:
           dotnet-version: 6.0.x
           
+      - name: Install GitVersion
+        uses: gittools/actions/gitversion/setup@v0.9.13
+        with:
+          versionSpec: '5.x'
+
+      - name: Determine Version
+        id:   gitversion
+        uses: gittools/actions/gitversion/execute@v0.9.13
+        with:
+          useConfigFile: true
+          configFilePath: .github/workflows/GitVersion.yml
+          
       - name: 'Restore packages'
         run: dotnet restore ${{ env.PROJECT_PATH }}
         
@@ -27,7 +39,7 @@ jobs:
         
         
       - name: 'Pack project'
-        run: dotnet pack ${{ env.PROJECT_PATH }} --no-restore --no-build --configuration Release -p:PackageVersion=1.0.0 --output ${{ env.PACKAGE_OUTPUT_DIRECTORY }}
+        run: dotnet pack ${{ env.PROJECT_PATH }} --no-restore --no-build --configuration Release -p:PackageVersion=${{ steps.gitversion.outputs.semVer }} --output ${{ env.PACKAGE_OUTPUT_DIRECTORY }}
 
       - name: 'Push package'
         run: dotnet nuget push ${{ env.PACKAGE_OUTPUT_DIRECTORY }}\*.nupkg -k ${{ secrets.NUGET_AUTH_TOKEN }} -s ${{ env.NUGET_SOURCE_URL }}
