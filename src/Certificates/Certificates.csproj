@@ -11,6 +11,7 @@
 	  <AssemblyVersion>1.0.4</AssemblyVersion>
 	  <FileVersion>1.0.4</FileVersion>
 	  <VersionPrefix>1.0.4</VersionPrefix>
+	  <Version>1.0.4</Version>
   </PropertyGroup>
 
 </Project>
