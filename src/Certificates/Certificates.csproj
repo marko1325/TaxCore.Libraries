@@ -8,9 +8,9 @@
     <RootNamespace>Dti.Libraries.$(MSBuildProjectName.Replace(" ", "_"))</RootNamespace>
 	  <PackageId>Dti.Libraries.$(MSBuildProjectName)</PackageId>
 	  <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
-	  <AssemblyVersion>1.0.3</AssemblyVersion>
-	  <FileVersion>1.0.3</FileVersion>
-	  <VersionPrefix>1.0.3</VersionPrefix>
+	  <AssemblyVersion>1.0.4</AssemblyVersion>
+	  <FileVersion>1.0.4</FileVersion>
+	  <VersionPrefix>1.0.4</VersionPrefix>
   </PropertyGroup>
 
 </Project>
