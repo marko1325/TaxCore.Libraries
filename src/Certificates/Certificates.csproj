@@ -6,6 +6,7 @@
     <Nullable>enable</Nullable>
     <AssemblyName>Dti.Libraries.$(MSBuildProjectName)</AssemblyName>
     <RootNamespace>Dti.Libraries.$(MSBuildProjectName.Replace(" ", "_"))</RootNamespace>
+	  <PackageId>Dti.Libraries.$(MSBuildProjectName)</PackageId>
   </PropertyGroup>
 
 </Project>
