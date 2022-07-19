@@ -1,6 +1,6 @@
 ﻿using System.Collections;
 
-namespace Certificates.Extensions
+namespace Datati.Libraries.Certificates.Extensions
 {
     public static class ObjectExtensions
     {

@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 
-namespace Certificates
+namespace Datati.Libraries.Certificates
 {
     public enum CertificateRevokeReason
     {

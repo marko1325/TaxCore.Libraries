@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Certificates
+namespace Datati.Libraries.Certificates
 {
     public class CertRequestData
     {

@@ -1,4 +1,4 @@
-namespace Certificates.Test
+namespace Datati.Libraries.Certificates.Test
 {
     [TestClass]
     public class UnitTest1
