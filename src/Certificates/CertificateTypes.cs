@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Certificates
+namespace Datati.Libraries.Certificates
 {
     /// <summary>
     /// Types of certificates used in system

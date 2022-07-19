@@ -1,10 +1,10 @@
-﻿using Certificates.Extensions;
+﻿using Datati.Libraries.Certificates.Extensions;
 using System.Runtime.Serialization;
 using System.Security.Cryptography;
 using System.Security.Cryptography.X509Certificates;
 using System.Text;
 
-namespace Certificates
+namespace Datati.Libraries.Certificates
 {
     public class Certificate : X509Certificate2, ISerializable, IDisposable
     {
