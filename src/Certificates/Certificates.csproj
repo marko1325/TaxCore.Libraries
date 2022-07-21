@@ -6,6 +6,17 @@
     <Nullable>enable</Nullable>
     <AssemblyName>Datati.Libraries.$(MSBuildProjectName)</AssemblyName>
     <RootNamespace>Datati.Libraries.$(MSBuildProjectName.Replace(" ", "_"))</RootNamespace>
+    <PackageProjectUrl>https://github.com/Data-Tech-International/Dti.Libraries</PackageProjectUrl>
+    <PackageIcon>taxcore.png</PackageIcon>
+    <RepositoryUrl>https://github.com/Data-Tech-International/Dti.Libraries</RepositoryUrl>
+    <PackageLicenseUrl>https://github.com/Data-Tech-International/Dti.Libraries/blob/main/LICENSE</PackageLicenseUrl>
 	</PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\..\..\Secure-Element-Reader-DtiMain\src\SecureElementReader.App\Assets\taxcore.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
 
 </Project>
