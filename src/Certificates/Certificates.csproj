@@ -13,10 +13,19 @@
 	</PropertyGroup>
 
   <ItemGroup>
-    <None Include="..\..\..\Secure-Element-Reader-DtiMain\src\SecureElementReader.App\Assets\taxcore.png">
+    <None Remove="Icon\taxcore.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Icon\taxcore.png">
       <Pack>True</Pack>
       <PackagePath>\</PackagePath>
-    </None>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Icon\taxcore.png" />
   </ItemGroup>
 
 </Project>
