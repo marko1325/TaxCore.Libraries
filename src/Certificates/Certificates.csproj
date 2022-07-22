@@ -4,8 +4,8 @@
     <TargetFramework>net6.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <AssemblyName>Datati.Libraries.$(MSBuildProjectName)</AssemblyName>
-    <RootNamespace>Datati.Libraries.$(MSBuildProjectName.Replace(" ", "_"))</RootNamespace>
+    <AssemblyName>TaxCore.Libraries.$(MSBuildProjectName)</AssemblyName>
+    <RootNamespace>TaxCore.Libraries.$(MSBuildProjectName.Replace(" ", "_"))</RootNamespace>
     <PackageProjectUrl>https://github.com/Data-Tech-International/Dti.Libraries</PackageProjectUrl>
     <PackageIcon>taxcore.png</PackageIcon>
     <RepositoryUrl>https://github.com/Data-Tech-International/Dti.Libraries</RepositoryUrl>
