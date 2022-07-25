@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Datati.Libraries.Certificates
+namespace TaxCore.Libraries.Certificates
 {
     /// <summary>
     /// Types of certificates used in system

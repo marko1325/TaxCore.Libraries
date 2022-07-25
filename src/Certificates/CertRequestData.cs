@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Datati.Libraries.Certificates
+namespace TaxCore.Libraries.Certificates
 {
     public class CertRequestData
     {

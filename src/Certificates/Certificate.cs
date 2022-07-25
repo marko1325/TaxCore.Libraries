@@ -4,7 +4,7 @@ using System.Security.Cryptography;
 using System.Security.Cryptography.X509Certificates;
 using System.Text;
 
-namespace Datati.Libraries.Certificates
+namespace TaxCore.Libraries.Certificates
 {
     public class Certificate : X509Certificate2, ISerializable, IDisposable
     {

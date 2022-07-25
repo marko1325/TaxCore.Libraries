@@ -1,4 +1,4 @@
-namespace Datati.Libraries.Certificates.Test
+namespace TaxCore.Libraries.Certificates.Test
 {
     [TestClass]
     public class CertificateTest

@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 
-namespace Datati.Libraries.Certificates
+namespace TaxCore.Libraries.Certificates
 {
     public enum CertificateRevokeReason
     {
