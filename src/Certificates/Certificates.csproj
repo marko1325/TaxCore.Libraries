@@ -11,6 +11,7 @@
     <PackageIcon>taxcore.png</PackageIcon>
     <RepositoryUrl>https://github.com/Data-Tech-International/Dti.Libraries</RepositoryUrl>
     <PackageLicenseUrl>https://github.com/Data-Tech-International/Dti.Libraries/blob/main/LICENSE</PackageLicenseUrl>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
 	</PropertyGroup>
 
   <ItemGroup>
@@ -23,6 +24,13 @@
       <PackagePath>\</PackagePath>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\..\README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
   </ItemGroup>
 
   <ItemGroup>
